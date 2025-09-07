@@ -49,17 +49,6 @@ main {
     gap: 3rem;
 }
 
-/* 🔴 Removed vertical nav for small screens */
-/* @media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .nav-home {
-        margin-right: 0;
-    }
-} */
-
 .hero {
     display: flex;
     flex-direction: column;
@@ -203,7 +192,7 @@ main {
 
 .project-item .image-placeholder {
   width: 100%;
-  max-width: 500px; /* keeps images from being too large */
+  max-width: 500px;
   border-radius: 0.5rem;
   overflow: hidden;
   border: 1px solid #9ca3af;
@@ -267,7 +256,6 @@ main {
   border-radius: 9999px;
 }
 
-/* Footer */
 footer {
     background-color: #B2D9CE;
     padding: 1.5rem 2rem;
@@ -282,3 +270,4 @@ footer {
         padding: 2rem;
     }
 }
+
