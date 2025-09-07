@@ -29,7 +29,7 @@ nav ul {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* keep wrapping if screen too small */
     list-style: none;
     padding: 0;
     margin: 0;
@@ -49,7 +49,8 @@ main {
     gap: 3rem;
 }
 
-@media (max-width: 768px) {
+/* 🔴 Removed vertical nav for small screens */
+/* @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
         align-items: flex-start;
@@ -57,7 +58,7 @@ main {
     .nav-home {
         margin-right: 0;
     }
-}
+} */
 
 .hero {
     display: flex;
