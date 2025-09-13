@@ -23,11 +23,13 @@ header {
     align-items: center;
     border-bottom: 2px solid #000000;
     flex-wrap: wrap; 
+    gap: 1rem;
 }
 
 nav {
-    flex: 1 1 auto;
-    text-align: center;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
 }
 
 header .switch {
@@ -39,9 +41,8 @@ header .switch {
 
 nav ul {
     display: flex;
-    justify-content: center;
     gap: 1.5rem;
-    flex-wrap: wrap; 
+    flex-wrap: nowrap; 
     list-style: none;
     padding: 0;
     margin: 0;
