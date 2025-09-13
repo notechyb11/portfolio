@@ -14,6 +14,7 @@ body {
     height: 100vh;
     border-radius: 0;
 }
+
 header {
     background-color: #B2D9CE;
     padding: 1.5rem 2rem;
@@ -21,10 +22,21 @@ header {
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #000000;
+    flex-wrap: wrap; 
 }
+
 nav {
-    flex-grow: 1;
+    flex: 1 1 auto;
+    text-align: center;
 }
+
+header .switch {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+}
+
 nav ul {
     display: flex;
     justify-content: center;
@@ -42,13 +54,35 @@ nav ul li a {
 nav ul li a:hover {
     color: #4b5563;
 }
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: row; 
+    }
+
+    nav {
+        flex-basis: 100%; 
+        margin-top: 0.75rem;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    header .switch {
+        position: absolute;
+        right: 1rem;
+        top: 1.25rem; 
+    }
+}
+
+
 main {
     padding: 1.5rem 3rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
 }
-
 
 .hero {
     display: flex;
@@ -73,7 +107,6 @@ main {
     overflow: hidden; 
     border: 1px solid #9ca3af;
 }
-
 @media (min-width: 768px) {
     .hero .image-placeholder {
         width: 16rem;
@@ -289,7 +322,6 @@ footer {
   color: #111827;
 }
 
-
 .dark-mode h1,
 .dark-mode h2,
 .dark-mode h3,
@@ -299,11 +331,9 @@ footer {
   color: #f3f4f6;
 }
 
-
 .dark-mode .section-title::after {
   background-color: #f3f4f6;
 }
-
 
 .dark-mode .skill span {
   color: #f3f4f6;
@@ -315,12 +345,10 @@ footer {
   background-color: #f3f4f6;
 }
 
-
 .dark-mode .project-item .text-placeholder h3,
 .dark-mode .project-item .text-placeholder p {
   color: #f3f4f6;
 }
-
 
 .dark-mode nav ul li a {
   color: #f3f4f6;
