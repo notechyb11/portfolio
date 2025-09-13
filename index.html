@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+
+   
 </head>
 <body>
     <div class="container">
@@ -15,12 +17,13 @@
         <header>
            <nav>
               <ul>
-                <button id="themeToggle">Dark/Light</button> 
-                  <li class="nav-home"><a href="#home">Home</a></li>
+                <button id="themeToggle">Dark/Light</button> <br>
+                <li class="nav-home"><a href="#home">Home</a></li>
                  <li><a href="#about">About</a></li>
                  <li><a href="#projects">Projects</a></li>
                  <li><a href="#skills"> Skills</a></li>
                  <li><a href="#contact">Contact</a></li>
+         
 </nav>
 
         </header>
@@ -115,33 +118,12 @@
 
         </main>
 
-     
         <footer id="contact">
             © Paul Albaciete · 09123456789. All rights reserved
         </footer>
     </div>
+
+         <script src="theme.js"></script>
+         <script src="edit.js"></script>
 </body>
-  <script>
-    const themeBtn = document.getElementById("themeToggle");
-         themeBtn.addEventListener("click", () => {
-         document.body.classList.toggle("dark-mode");
-        });
-
-       
-         const editBtn = document.getElementById("editBtn");
-        const aboutText = document.getElementById("aboutText");
-
-          editBtn.addEventListener("click", () => {
-         if (aboutText.isContentEditable) {
-            aboutText.contentEditable = "false";
-            editBtn.textContent = "Edit";
-      } else {
-             aboutText.contentEditable = "true";
-             aboutText.focus();
-            editBtn.textContent = "Save";
-    }
-  });
-</script>
 </html>
-
-
