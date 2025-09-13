@@ -271,3 +271,60 @@ footer {
         padding: 2rem;
     }
 }
+
+
+.dark-mode {
+  background-color: #111827; 
+  color: #f3f4f6;
+}
+
+.dark-mode header,
+.dark-mode footer {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
+
+.dark-mode .button {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode p,
+.dark-mode span,
+.dark-mode a {
+  color: #f3f4f6;
+}
+
+
+.dark-mode .section-title::after {
+  background-color: #f3f4f6;
+}
+
+
+.dark-mode .skill span {
+  color: #f3f4f6;
+}
+.dark-mode .skill-bar {
+  background-color: #374151;
+}
+.dark-mode .skill-level {
+  background-color: #f3f4f6;
+}
+
+
+.dark-mode .project-item .text-placeholder h3,
+.dark-mode .project-item .text-placeholder p {
+  color: #f3f4f6;
+}
+
+
+.dark-mode nav ul li a {
+  color: #f3f4f6;
+}
+.dark-mode nav ul li a:hover {
+  color: #d1d5db;
+}
