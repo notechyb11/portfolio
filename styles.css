@@ -47,6 +47,7 @@ nav ul {
     margin: 0 auto;           
     width: 100%;             
     text-align: center;
+    list-style: none;
 }
 nav ul li a {
     color: #1f2937;
@@ -313,6 +314,16 @@ footer {
   color: #f3f4f6;
 }
 
+#themeToggle {
+  background-color: white;
+  color: #111827;
+  border: 2px solid #111827;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
 .dark-mode header,
 .dark-mode footer {
   background-color: #1f2937;
