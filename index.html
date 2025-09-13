@@ -15,6 +15,7 @@
         <header>
            <nav>
               <ul>
+                <button id="themeToggle">Dark/Light</button>
                   <li class="nav-home"><a href="#home">Home</a></li>
                  <li><a href="#about">About</a></li>
                  <li><a href="#projects">Projects</a></li>
@@ -34,15 +35,17 @@
                     <h1>Hi, I'm Paul Timothy</h1>
                     <p>I'm a  web developer</p>
                     <a href="#projects" class="button">View my work</a>
+                   
                 </div>
             </section>
 
            
             <section class="text-center">
                 <h2 class="section-title">ABOUT ME</h2>
-                <p>I am a dedicated web developer with a strong passion for building clean, functional, and user-friendly websites.
+                <p id="aboutText">I am a dedicated web developer with a strong passion for building clean, functional, and user-friendly websites.
                      I enjoy transforming ideas into interactive digital experiences and continuously explore new technologies 
                      to refine my skills and deliver better solutions. </p>
+                <button id="editBtn">Edit</button>
             </section>
 
          
@@ -118,5 +121,25 @@
         </footer>
     </div>
 </body>
-</html>
+  <script>
+    const themeBtn = document.getElementById("themeToggle");
+         themeBtn.addEventListener("click", () => {
+         document.body.classList.toggle("dark-mode");
+        });
 
+       
+         const editBtn = document.getElementById("editBtn");
+        const aboutText = document.getElementById("aboutText");
+
+          editBtn.addEventListener("click", () => {
+         if (aboutText.isContentEditable) {
+            aboutText.contentEditable = "false";
+            editBtn.textContent = "Edit";
+      } else {
+             aboutText.contentEditable = "true";
+             aboutText.focus();
+            editBtn.textContent = "Save";
+    }
+  });
+</script>
+</html>
